@@ -1,0 +1,29 @@
+.star{
+    display:block;
+    height:32px;
+    width:600px;
+    line-height:32px;
+    padding:0 0 0 86px;
+    background:url(img/star.png) no-repeat;
+    background-size:auto 64px;
+    background-position:0 0;
+    color:#b09d60;
+    text-decoration:none;
+
+    position:absolute;
+    top:-50px;
+	left:200px;
+}
+.star.on{
+    background-position:0 -32px;
+}
+
+.gm1{
+background:url(img/gm1.png) no-repeat;
+height:768px;
+}
+
+.gm2{
+background:url(img/gm2.png) no-repeat;
+height:768px;
+}

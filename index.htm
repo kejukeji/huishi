@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="GB2312">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+	<title>过敏</title>
+    <!--组件依赖css begin-->
+    <link rel="stylesheet" type="text/css" href="css/widget/slider/slider.css" />
+    <link rel="stylesheet" type="text/css" href="css/widget/slider/slider.default.css" /> 
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--皮肤文件，若不使用该皮肤，可以不加载-->
+    <!--组件依赖css end-->
+	
+    <!--组件依赖js begin-->
+    <script type="text/javascript" src="js/zepto.js"></script>
+	<script type="text/javascript" src="js/mobileevent2pc.js"></script>		<!-- 此JS作用：在PC端方便查看效果，用在手机端时，可不引用 -->
+    <script type="text/javascript" src="js/touch.js"></script>      <!--新版zepto合并版中不包括touch.js-->
+    <script type="text/javascript" src="js/zepto.extend.js"></script>
+    <script type="text/javascript" src="js/zepto.ui.js"></script>
+    <script type="text/javascript" src="js/widget/slider.js"></script>
+    <!--组件依赖js end-->
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+
+<!-- 代码 开始 -->
+<div id="slider">
+    <section class="gm1">
+        
+    </section>
+    
+    <section class="gm2">
+    <a href="#" class="star">婴儿过敏已成为威胁婴儿健康的全球公共卫生问题</a>
+    <a href="#" class="star">婴儿过敏已成为威胁婴儿健康的全球公共卫生问题</a>
+    <a href="#" class="star">婴儿过敏已成为威胁婴儿健康的全球公共卫生问题</a>
+    <a href="#" class="star">婴儿过敏已成为威胁婴儿健康的全球公共卫生问题</a>
+    </section>
+    <section class="gm3">
+        <div class="wz" id="ppt3">
+						3333333333333333333dsadsa
+					</div>
+    </section>
+</div>
+<script>
+    //start2();
+    //创建slider组件
+    $('#slider').slider({loop:true,
+        'slideend':function(e,i){
+		console.log(i);
+		}});
+	
+	var slider = $('#slider').slider('this');
+	var starss=$('.star').eq(0);
+
+	$('.star').eq(0).on('tap',function(e){
+	    e.preventDefault();
+        slider._move(2);
+    });
+	
+	$('.star').eq(1).on('tap',function(e){
+	    e.preventDefault();
+        slider._move(0);
+    });
+	
+   
+</script>
+
+<!-- 代码 结束 -->
+
+
+
+</body>
+</html>

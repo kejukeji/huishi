@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<meta charset="GB2312">
+	<meta charset="utf8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="css/style.css" type="text/css" />
 	<title>过敏</title>
@@ -45,9 +45,18 @@
 <script>
     //start2();
     //创建slider组件
-    $('#slider').slider({loop:true,
+    $('#slider').slider({
+        loop:true,
+        'slide':function(e,i){
+            if(i==1){
+                $('.star').css('top',-50);
+            }
+        },
         'slideend':function(e,i){
-		console.log(i);
+            console.log(i);
+            if(i==1){
+                star();
+            }
 		}});
 	
 	var slider = $('#slider').slider('this');

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="gb2312">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+	<title>过敏</title>
+    <!--组件依赖css begin-->
+    <link rel="stylesheet" type="text/css" href="css/widget/slider/slider.css" />
+    <link rel="stylesheet" type="text/css" href="css/widget/slider/slider.default.css" /> 
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--皮肤文件，若不使用该皮肤，可以不加载-->
+    <!--组件依赖css end-->
+	
+    <!--组件依赖js begin-->
+    <script type="text/javascript" src="js/zepto.js"></script>
+	<script type="text/javascript" src="js/mobileevent2pc.js"></script>		<!-- 此JS作用：在PC端方便查看效果，用在手机端时，可不引用 -->
+    <script type="text/javascript" src="js/touch.js"></script>      <!--新版zepto合并版中不包括touch.js-->
+    <script type="text/javascript" src="js/zepto.extend.js"></script>
+    <script type="text/javascript" src="js/zepto.ui.js"></script>
+    <script type="text/javascript" src="js/widget/slider.js"></script>
+    <!--组件依赖js end-->
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+
+
+    
+    <section class="gm2">
+		<a href="#" class="star">婴儿过敏已成为威胁婴儿健康的全球公共卫生问题</a>
+		<a href="#" class="star">影响婴儿过敏中免疫反应的重要因素</a>
+		<a href="#" class="star">降低婴儿过敏风险的营养干预手段</a>
+		<a href="#" class="star">惠氏[金装敏儿乐婴儿配方奶粉]的营养特点</a>
+		
+		<a href="http://www.baidu.com" style="position:absolute;height:300px;width:300px;top:300px;left:200px"></a>
+		
+		<div style="position:absolute;height:40px;width:800px;top:570px;left:0px">
+		
+		
+		<div id= "box2" style="height:40px;width:0px;">1</div>
+		<a onclick="ref2click()" href="javascript:void(0)"><img id = "ref2" src="css/img/ref2.png" /></a>
+				
+		</div>
+    </section>
+
+<script>
+	function ref2click(){
+		$("#ref2").click(function (){
+			
+			alert(111);
+			$("#box2").animate({width:"550px"});
+		});
+	}
+</script>
+
+
+</body>
+</html>
